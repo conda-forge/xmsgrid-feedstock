@@ -1,4 +1,4 @@
-{% set version = "3.0.5" %}
+{% set version = "4.0.0" %}
 
 package:
   name: xmsgrid
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmsgrid/archive/{{ version }}.tar.gz
-  sha256: de0b6a59afb4fb1929b81c07e3078c37e15a0c01ba6999db78b3ed50a4335ae4
+  sha256: ab9b79127a984ada4aa77da24cb8286d89da2b96cd0502d7846b183884f35417
 
 build:
   number: 0
