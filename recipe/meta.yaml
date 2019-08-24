@@ -1,4 +1,4 @@
-{% set version = "3.0.5" %}
+{% set version = "4.1.0" %}
 
 package:
   name: xmsgrid
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmsgrid/archive/{{ version }}.tar.gz
-  sha256: de0b6a59afb4fb1929b81c07e3078c37e15a0c01ba6999db78b3ed50a4335ae4
+  sha256: 25895912db6dd88eed03502ed2ddbc989258201396f74f677a57be7c7a2befae
 
 build:
   number: 0
-  skip: True  # [not py36]
+  skip: True  # [py27]
   merge_build_host: true
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - zlib
     - xmscore
     - python
-    - pybind11
+    - pybind11=2.2
     - boost-cpp
     - pip
   run:
