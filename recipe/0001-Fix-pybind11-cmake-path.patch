@@ -1,0 +1,15 @@
+--- CMakeLists.txt
++++ CMakeLists.txt
+@@ -47,7 +47,7 @@
+     if(IS_CONDA_BUILD)
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11Targets.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/FindPythonLibsNew.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11Config.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11ConfigVersion.cmake")
+-        include("${CONDA_PREFIX}/share/cmake/pybind11/pybind11Tools.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Targets.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/FindPythonLibsNew.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Config.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11ConfigVersion.cmake")
++        include("${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Tools.cmake")
+ 
