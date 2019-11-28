@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/Aquaveo/xmsgrid/archive/{{ version }}.tar.gz
   sha256: 8eb6584771c639554cf04e9203b3d5b39395cf40e2490f6348afe2195900b882
+  patches:
+    - 0001-Fix-pybind11-cmake-path.patch
 
 build:
   number: 0
@@ -22,7 +24,8 @@ requirements:
     - zlib
     - xmscore
     - python
-    - pybind11=2.2
+    # need newer pybind11 builds for cmake path patch
+    - pybind11 >2.3.0
     - boost-cpp
     - pip
   run:
