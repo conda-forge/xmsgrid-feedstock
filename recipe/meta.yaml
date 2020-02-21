@@ -11,7 +11,7 @@ source:
     - 0001-Fix-pybind11-cmake-path.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py27]
   merge_build_host: true
 
