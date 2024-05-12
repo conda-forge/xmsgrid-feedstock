@@ -1,4 +1,4 @@
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: xmsgrid
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmsgrid/archive/{{ version }}.tar.gz
-  sha256: 8eb6584771c639554cf04e9203b3d5b39395cf40e2490f6348afe2195900b882
+  sha256: b0852af0a30c7529752c26fe1296b4b917f6644553439e2915d93b9d2a4b40f1
   patches:
     - 0001-Fix-pybind11-cmake-path.patch
 
 build:
-  number: 2
-  skip: True  # [py27]
+  number: 0
+  skip: true  # [py27]
   merge_build_host: true
 
 requirements:
@@ -46,7 +46,7 @@ about:
   home: aquaveo.com
   license: BSD-2-Clause
   license_file: LICENSE
-  summary: "Grid library for XMS libraries and products"
+  summary: Grid library for XMS libraries and products
   doc_url: https://aquaveo.github.io/xmsgrid
   dev_url: https://github.com/Aquaveo/xmsgrid
 
